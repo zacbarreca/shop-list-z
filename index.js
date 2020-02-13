@@ -1,4 +1,5 @@
 'use strict';
+<<<<<<< HEAD
 
 function handleClicks(){
   console.log('Hello world');
@@ -38,3 +39,5 @@ function handleClicks(){
 }
 
 $(handleClicks);
+=======
+>>>>>>> e76a2d5ad707b0acd53c41d6e170c1edf036f8b8
