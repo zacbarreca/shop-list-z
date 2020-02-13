@@ -1,5 +1,7 @@
 'use strict';
-<<<<<<< HEAD
+
+let list = $('.shopping-list');
+let form = $('#js-shopping-list-form');
 
 function handleClicks(){
   console.log('Hello world');
@@ -35,9 +37,19 @@ function handleClicks(){
     `;
 
     list.append($(newElement));
+
+  });
+
+  list.on('click', '.shopping-item-toggle', function(){
+    let listItem = $(this).closest('li');
+    let item = listItem.find('.shopping-item');
+    item.toggleClass('shopping-item__checked');
   });
 }
 
+list.on('click', '.shopping-item-delete', function(){
+  let listItem = $(this).closest('li');
+  listItem.remove();
+});
+
 $(handleClicks);
-=======
->>>>>>> e76a2d5ad707b0acd53c41d6e170c1edf036f8b8
